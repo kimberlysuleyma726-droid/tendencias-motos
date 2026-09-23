@@ -1,0 +1,508 @@
+/*==================================================
+    TÍTULO DE CONTACTO
+==================================================*/
+
+/* Estilo de la sección superior */
+.titulo-contacto {
+
+    /* Centra todo el texto */
+    text-align: center;
+
+    /* Espacio interno */
+    padding: 55px 20px 35px;
+
+    /* Fondo */
+    background-color: #18001f;
+
+    /* Color del texto */
+    color: white;
+}
+
+/* Título principal */
+.titulo-contacto h2 {
+
+    /* Tamaño */
+    font-size: 42px;
+
+    /* Espacio inferior */
+    margin-bottom: 15px;
+}
+
+
+/* Descripción */
+.titulo-contacto p {
+
+    /* Tamaño del texto */
+    font-size: 19px;
+}
+
+
+/*==================================================
+    SECCIÓN PRINCIPAL
+==================================================*/
+
+.seccion-contacto {
+
+    /* Fondo */
+    background-color: #18001f;
+
+    /* Espacio */
+    padding: 50px 30px 70px;
+}
+
+
+/*==================================================
+    CONTENEDOR
+==================================================*/
+
+.contenedor-contacto {
+
+    /* Ancho máximo */
+    max-width: 1100px;
+
+    /* Centra el contenido */
+    margin: auto;
+
+    /* Coloca información y formulario juntos */
+    display: grid;
+
+    /* Dos columnas */
+    grid-template-columns: 1fr 1fr;
+
+    /* Espacio entre columnas */
+    gap: 40px;
+
+    /* Alinea los elementos */
+    align-items: stretch;
+}
+
+
+/*==================================================
+    INFORMACIÓN
+==================================================*/
+
+.informacion-contacto {
+
+    /* Fondo */
+    background: linear-gradient(
+        135deg,
+        #24002f,
+        #5a189a
+    );
+
+    /* Color */
+    color: white;
+
+    /* Espacio interno */
+    padding: 40px;
+
+    /* Bordes redondeados */
+    border-radius: 20px;
+
+    /* Sombra */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+
+    /* Animación */
+    transition: 0.4s;
+}
+
+
+/* Efecto al pasar el mouse */
+.informacion-contacto:hover {
+
+    /* Sube ligeramente */
+    transform: translateY(-5px);
+
+    /* Aumenta la sombra */
+    box-shadow: 0 15px 30px rgba(123,44,191,0.5);
+}
+
+
+/* Título de información */
+.informacion-contacto h2 {
+
+    /* Tamaño */
+    font-size: 32px;
+
+    /* Espacio inferior */
+    margin-bottom: 15px;
+}
+
+
+/* Texto */
+.informacion-contacto > p {
+
+    /* Altura de línea */
+    line-height: 1.6;
+
+    /* Espacio inferior */
+    margin-bottom: 30px;
+}
+
+
+/*==================================================
+    DATOS DE CONTACTO
+==================================================*/
+
+/* Cada fila de información */
+.dato-contacto {
+
+    /* Coloca icono y texto juntos */
+    display: flex;
+
+    /* Centra verticalmente */
+    align-items: center;
+
+    /* Espacio entre elementos */
+    gap: 15px;
+
+    /* Espacio inferior */
+    margin-bottom: 22px;
+
+    /* Animación */
+    transition: 0.3s;
+}
+
+
+/* Efecto al pasar el mouse */
+.dato-contacto:hover {
+
+    /* Se desplaza ligeramente */
+    transform: translateX(8px);
+}
+
+
+/* Iconos */
+.dato-contacto > span {
+
+    /* Tamaño del icono */
+    font-size: 32px;
+}
+
+
+/* Título de cada dato */
+.dato-contacto h3 {
+
+    /* Elimina espacio innecesario */
+    margin: 0 0 4px;
+}
+
+
+/* Texto de cada dato */
+.dato-contacto p {
+
+    /* Elimina margen */
+    margin: 0;
+}
+
+
+/*==================================================
+    FORMULARIO
+==================================================*/
+
+.formulario-contacto {
+
+    /* Fondo blanco */
+    background-color: white;
+
+    /* Espacio interno */
+    padding: 40px;
+
+    /* Bordes redondeados */
+    border-radius: 20px;
+
+    /* Sombra */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+
+    /* Animación */
+    transition: 0.4s;
+}
+
+
+/* Efecto del formulario */
+.formulario-contacto:hover {
+
+    /* Sube ligeramente */
+    transform: translateY(-5px);
+
+    /* Aumenta la sombra */
+    box-shadow: 0 15px 30px rgba(123,44,191,0.5);
+}
+
+
+/* Título del formulario */
+.formulario-contacto h2 {
+
+    /* Color */
+    color: #4c1d95;
+
+    /* Tamaño */
+    font-size: 30px;
+
+    /* Espacio inferior */
+    margin-bottom: 25px;
+}
+
+
+/*==================================================
+    ETIQUETAS
+==================================================*/
+
+.formulario-contacto label {
+
+    /* Hace que ocupe toda la línea */
+    display: block;
+
+    /* Texto grueso */
+    font-weight: bold;
+
+    /* Color */
+    color: #333;
+
+    /* Espacio inferior */
+    margin-bottom: 7px;
+}
+
+
+/*==================================================
+    CAMPOS
+==================================================*/
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+
+    /* Ocupa todo el ancho */
+    width: 100%;
+
+    /* Espacio interno */
+    padding: 13px;
+
+    /* Tamaño de fuente */
+    font-size: 15px;
+
+    /* Borde */
+    border: 2px solid #ddd;
+
+    /* Bordes redondeados */
+    border-radius: 10px;
+
+    /* Evita que el ancho se salga */
+    box-sizing: border-box;
+
+    /* Espacio inferior */
+    margin-bottom: 18px;
+
+    /* Transición */
+    transition: 0.3s;
+
+    /* Fuente */
+    font-family: Arial, sans-serif;
+}
+
+
+/*==================================================
+    EFECTO AL SELECCIONAR UN CAMPO
+==================================================*/
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+
+    /* Cambia el borde */
+    border-color: #7b2cbf;
+
+    /* Elimina el borde predeterminado */
+    outline: none;
+
+    /* Agrega brillo */
+    box-shadow: 0 0 10px rgba(123,44,191,0.3);
+}
+
+
+/*==================================================
+    BOTÓN
+==================================================*/
+
+.formulario-contacto button {
+
+    /* Ancho completo */
+    width: 100%;
+
+    /* Espacio interno */
+    padding: 14px;
+
+    /* Sin borde */
+    border: none;
+
+    /* Bordes redondeados */
+    border-radius: 10px;
+
+    /* Fondo */
+    background: linear-gradient(
+        90deg,
+        #5a189a,
+        #9d4edd
+    );
+
+    /* Color */
+    color: white;
+
+    /* Texto grueso */
+    font-weight: bold;
+
+    /* Tamaño */
+    font-size: 16px;
+
+    /* Cursor */
+    cursor: pointer;
+
+    /* Animación */
+    transition: 0.3s;
+}
+
+
+/* Efecto del botón */
+.formulario-contacto button:hover {
+
+    /* Aumenta ligeramente */
+    transform: scale(1.03);
+
+    /* Sombra */
+    box-shadow: 0 8px 20px rgba(90,24,154,0.5);
+}
+
+
+/*==================================================
+    FRASE FINAL
+==================================================*/
+
+.frase-contacto {
+
+    /* Fondo */
+    background: linear-gradient(
+        135deg,
+        #5a189a,
+        #24002f
+    );
+
+    /* Color */
+    color: white;
+
+    /* Centra el contenido */
+    text-align: center;
+
+    /* Espacio */
+    padding: 50px 20px;
+}
+
+
+/* Título */
+.frase-contacto h2 {
+
+    /* Tamaño */
+    font-size: 30px;
+
+    /* Espacio inferior */
+    margin-bottom: 10px;
+}
+
+
+/* Texto */
+.frase-contacto p {
+
+    /* Tamaño */
+    font-size: 18px;
+}
+
+
+/*==================================================
+    DISEÑO PARA TABLET
+==================================================*/
+
+@media (max-width: 850px) {
+
+    .contenedor-contacto {
+
+        /* Una columna */
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/*==================================================
+    DISEÑO PARA CELULAR
+==================================================*/
+
+@media (max-width: 600px) {
+
+    /* Reduce el espacio */
+    .seccion-contacto {
+        padding: 35px 20px;
+    }
+
+    /* Reduce el tamaño del título */
+    .titulo-contacto h2 {
+        font-size: 32px;
+    }
+
+    /* Reduce el espacio del formulario */
+    .formulario-contacto,
+    .informacion-contacto {
+        padding: 25px;
+    }
+
+}
+/*==================================================
+    BOTÓN DE WHATSAPP
+==================================================*/
+
+.whatsapp a {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px 18px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.whatsapp a:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.7);
+}
+/*==================================================
+    DISEÑO PARA TABLET
+==================================================*/
+
+/* Cuando la pantalla es menor de 900px,
+   mostramos 2 motos por fila */
+@media (max-width: 900px) {
+
+    .contenedor-motos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/*==================================================
+    DISEÑO PARA CELULAR
+==================================================*/
+
+/* Cuando la pantalla es menor de 600px,
+   mostramos una moto por fila */
+@media (max-width: 600px) {
+
+    .contenedor-motos {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion-motos {
+        padding: 30px 20px;
+    }
+
+    .titulo-motos h2 {
+        font-size: 32px;
+    }

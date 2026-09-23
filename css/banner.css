@@ -1,0 +1,116 @@
+/*=============================================
+    BANNER
+=====================================*/
+
+.banner{
+    background-image: url("../img/portadaaa.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*este código nos sirver para cambiarle el fondo y color de letra al bienvinido*/
+.texto-banner{
+    background-color: rgba(188, 166, 245, 0.685);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(22, 23, 23);
+}
+/* este codigo es para hacer mas grande o mas pequeña la letra del inicio*/
+.texto-banner h2{
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.texto-banner p{
+    font-size: 25px;
+}
+
+/*==================================================
+    ADAPTACIÓN DEL ENCABEZADO PARA CELULAR
+==================================================*/
+
+@media (max-width: 600px) {
+
+    /* Contenedor del encabezado */
+    header .contenedor {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 20px 15px;
+    }
+
+    /* Logo y texto principal */
+    header .logo {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    /* Frase principal */
+    header .logo h1 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Frase secundaria */
+    header .logo p {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-top: 12px;
+    }
+
+}
+
+/*==================================================
+    DISEÑO PARA TABLET
+==================================================*/
+
+/* Cuando la pantalla es menor de 900px,
+   mostramos 2 motos por fila */
+@media (max-width: 900px) {
+
+    .contenedor-motos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/*==================================================
+    DISEÑO PARA CELULAR
+==================================================*/
+
+/* Cuando la pantalla es menor de 600px,
+   mostramos una moto por fila */
+@media (max-width: 600px) {
+    
+}
+
+    .contenedor-motos {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion-motos {
+        padding: 30px 20px;
+    }
+
+    .titulo-motos h2 {
+        font-size: 32px;
+    }
+
+
+
+
+
+
+
+
+
+

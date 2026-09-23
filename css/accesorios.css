@@ -1,0 +1,329 @@
+/*==================================================
+    TÍTULO DE ACCESORIOS
+==================================================*/
+
+/* Esta parte modifica toda la sección del título */
+.titulo-accesorios {
+
+    /* Centra el texto */
+    text-align: center;
+
+    /* Crea espacio arriba, a los lados y abajo */
+    padding: 50px 20px 30px;
+
+    /* Color de fondo */
+    background-color: #18001f;
+
+    /* Color de las letras */
+    color: white;
+}
+
+
+/*==================================================
+    TÍTULO PRINCIPAL
+==================================================*/
+
+/* Modifica el tamaño y espacio del título */
+.titulo-accesorios h2 {
+
+    /* Tamaño de la letra */
+    font-size: 42px;
+
+    /* Espacio debajo del título */
+    margin-bottom: 15px;
+}
+
+
+/*==================================================
+    DESCRIPCIÓN DEL TÍTULO
+==================================================*/
+
+/* Modifica el texto que está debajo del título */
+.titulo-accesorios p {
+
+    /* Tamaño del texto */
+    font-size: 20px;
+}
+
+
+/*==================================================
+    SECCIÓN DE LAS TARJETAS
+==================================================*/
+
+/* Esta sección contiene todas las tarjetas */
+.seccion-accesorios {
+
+    /* Color de fondo */
+    background-color: #18001f;
+
+    /* Espacio alrededor de las tarjetas */
+    padding: 30px 50px 70px;
+}
+
+
+/*==================================================
+    CONTENEDOR DE LAS TARJETAS
+==================================================*/
+
+/* Organiza las tarjetas en filas y columnas */
+.contenedor-accesorios {
+
+    /* Ancho máximo del contenido */
+    max-width: 1200px;
+
+    /* Centra el contenido */
+    margin: auto;
+
+    /* Activa el sistema Grid */
+    display: grid;
+
+    /* Coloca 4 tarjetas por fila */
+    grid-template-columns: repeat(4, 1fr);
+
+    /* Espacio entre las tarjetas */
+    gap: 30px;
+}
+
+
+/*==================================================
+    TARJETA
+==================================================*/
+
+/* Diseño general de cada tarjeta */
+.tarjeta-accesorio {
+
+    /* Fondo blanco */
+    background-color: white;
+
+    /* Color del texto */
+    color: #222;
+
+    /* Redondea las esquinas */
+    border-radius: 18px;
+
+    /* Evita que el contenido salga de la tarjeta */
+    overflow: hidden;
+
+    /* Sombra de la tarjeta */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+
+    /* Hace más suave el efecto */
+    transition: transform 0.4s, box-shadow 0.4s;
+
+    /* Centra el contenido */
+    text-align: center;
+}
+
+
+/*==================================================
+    IMAGEN
+==================================================*/
+
+/* Modifica las imágenes de los accesorios */
+.tarjeta-accesorio img {
+
+    /* La imagen ocupa todo el ancho */
+    width: 100%;
+
+    /* Altura de la imagen */
+    height: 220px;
+
+    /* Evita que la imagen se deforme */
+    object-fit: cover;
+
+    /* Elimina espacios debajo de la imagen */
+    display: block;
+
+    /* Hace que el cambio de tamaño sea suave */
+    transition: transform 0.5s;
+}
+
+
+/*==================================================
+    EFECTO DE LA IMAGEN
+==================================================*/
+
+/* Cuando el mouse pasa sobre la tarjeta,
+   la imagen aumenta ligeramente */
+.tarjeta-accesorio:hover img {
+
+    /* Aumenta la imagen un 8% */
+    transform: scale(1.08);
+}
+
+
+/*==================================================
+    EFECTO DE LA TARJETA
+==================================================*/
+
+/* Cuando colocamos el mouse sobre la tarjeta */
+.tarjeta-accesorio:hover {
+
+    /* La tarjeta sube un poco */
+    transform: translateY(-10px);
+
+    /* Aumenta la sombra */
+    box-shadow: 0 18px 35px rgba(0,0,0,0.7);
+}
+
+
+/*==================================================
+    CONTENIDO
+==================================================*/
+
+/* Espacio donde está el nombre,
+   descripción y precio */
+.contenido-accesorio {
+
+    /* Espacio interno */
+    padding: 20px;
+}
+
+
+/*==================================================
+    CATEGORÍA
+==================================================*/
+
+/* Estilo de MUJER y HOMBRE */
+.categoria {
+
+    /* Convierte el texto en una pequeña etiqueta */
+    display: inline-block;
+
+    /* Espacio alrededor del texto */
+    padding: 5px 12px;
+
+    /* Redondea la etiqueta */
+    border-radius: 20px;
+
+    /* Color de fondo */
+    background-color: #7b2cbf;
+
+    /* Color del texto */
+    color: white;
+
+    /* Tamaño del texto */
+    font-size: 12px;
+
+    /* Hace el texto más grueso */
+    font-weight: bold;
+
+    /* Espacio debajo */
+    margin-bottom: 10px;
+}
+
+
+/*==================================================
+    NOMBRE DEL ACCESORIO
+==================================================*/
+
+/* Modifica el nombre de cada accesorio */
+.contenido-accesorio h3 {
+
+    /* Tamaño del nombre */
+    font-size: 23px;
+
+    /* Espacio debajo */
+    margin-bottom: 12px;
+}
+
+
+/*==================================================
+    DESCRIPCIÓN
+==================================================*/
+
+/* Modifica la descripción */
+.contenido-accesorio p {
+
+    /* Tamaño del texto */
+    font-size: 16px;
+
+    /* Espacio entre líneas */
+    line-height: 1.5;
+}
+
+
+/*==================================================
+    PRECIO
+==================================================*/
+
+/* Diseño del precio */
+.precio-accesorio {
+
+    /* Hace las letras más gruesas */
+    font-weight: bold;
+
+    /* Tamaño del precio */
+    font-size: 23px !important;
+
+    /* Color del precio */
+    color: #7b2cbf;
+
+    /* Espacio arriba */
+    margin-top: 15px;
+}
+
+
+/*==================================================
+    TABLET
+==================================================*/
+
+/* Estos estilos funcionan cuando la pantalla
+   tiene máximo 1000 píxeles */
+@media (max-width: 1000px) {
+
+    .contenedor-accesorios {
+
+        /* Ahora aparecen 2 tarjetas por fila */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+/*==================================================
+    EFECTO DE SOMBRA AL PASAR EL MOUSE
+==================================================*/
+
+/* Aumenta la sombra cuando colocamos
+   el mouse sobre una tarjeta */
+.tarjeta-moto:hover .tarjeta-frente,
+.tarjeta-moto:hover .tarjeta-atras {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+}
+
+
+/*==================================================
+    DISEÑO PARA TABLET
+==================================================*/
+
+/* Cuando la pantalla es menor de 900px,
+   mostramos 2 motos por fila */
+@media (max-width: 900px) {
+
+    .contenedor-motos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/*==================================================
+    DISEÑO PARA CELULAR
+==================================================*/
+
+/* Cuando la pantalla es menor de 600px,
+   mostramos una moto por fila */
+@media (max-width: 700px) {
+
+    .contenedor-accesorios {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion-accesorios {
+        padding: 30px 20px;
+    }
+
+    .titulo-motos h2 {
+        font-size: 32px;
+    }

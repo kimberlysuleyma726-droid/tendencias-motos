@@ -1,0 +1,502 @@
+/*==================================================
+    TÍTULO DE LA GALERÍA
+==================================================*/
+
+.titulo-galeria {
+    position: relative;
+    overflow: hidden;
+
+    text-align: center;
+
+    padding: 70px 20px 50px;
+
+    background: linear-gradient(
+        135deg,
+        #18001f,
+        #3b0764,
+        #7b2cbf
+    );
+
+    color: white;
+}
+
+
+/*==================================================
+    TÍTULO
+==================================================*/
+
+.titulo-galeria h2 {
+    position: relative;
+
+    font-size: 50px;
+
+    margin-bottom: 15px;
+
+    letter-spacing: 3px;
+
+    animation: aparecerTitulo 1.2s ease;
+}
+
+
+/*==================================================
+    TEXTO
+==================================================*/
+
+.titulo-galeria p {
+    position: relative;
+
+    font-size: 20px;
+
+    animation: aparecerTexto 1.8s ease;
+}
+
+
+/*==================================================
+    ANIMACIÓN DEL TÍTULO
+==================================================*/
+
+@keyframes aparecerTitulo {
+
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/*==================================================
+    ANIMACIÓN DEL TEXTO
+==================================================*/
+
+@keyframes aparecerTexto {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/*==================================================
+    BRILLO DEL FONDO
+==================================================*/
+
+.brillo-titulo {
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    background: rgba(255,255,255,0.12);
+
+    border-radius: 50%;
+
+    left: -80px;
+    top: -100px;
+
+    animation: moverBrillo 5s infinite alternate;
+}
+
+
+@keyframes moverBrillo {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.5);
+    }
+
+}
+
+
+/*==================================================
+    SECCIÓN DE GALERÍA
+==================================================*/
+
+.seccion-galeria {
+
+    background-color: #18001f;
+
+    padding: 60px 40px 80px;
+}
+
+
+/*==================================================
+    CONTENEDOR
+==================================================*/
+
+.contenedor-galeria {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-auto-rows: 250px;
+
+    gap: 20px;
+}
+
+
+/*==================================================
+    TARJETAS DE LAS FOTOS
+==================================================*/
+
+.foto-galeria {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.6);
+
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+
+/*==================================================
+    ALGUNAS FOTOS MÁS GRANDES
+==================================================*/
+
+.foto-galeria.grande {
+
+    grid-column: span 2;
+
+    grid-row: span 2;
+}
+
+
+/*==================================================
+    IMÁGENES
+==================================================*/
+
+.foto-galeria img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.7s ease,
+        filter 0.7s ease;
+}
+
+
+/*==================================================
+    EFECTO AL PASAR EL MOUSE
+==================================================*/
+
+.foto-galeria:hover {
+
+    transform:
+        translateY(-10px)
+        scale(1.02);
+
+    box-shadow:
+        0 20px 40px rgba(123,44,191,0.8);
+}
+
+
+/*==================================================
+    ZOOM DE LA IMAGEN
+==================================================*/
+
+.foto-galeria:hover img {
+
+    transform: scale(1.15);
+
+    filter: brightness(0.65);
+}
+
+
+/*==================================================
+    INFORMACIÓN SOBRE LA FOTO
+==================================================*/
+
+.info-foto {
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 25px 20px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(24,0,31,0.95)
+        );
+
+    transform: translateY(100%);
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+/*==================================================
+    MOSTRAR INFORMACIÓN
+==================================================*/
+
+.foto-galeria:hover .info-foto {
+
+    transform: translateY(0);
+
+}
+
+
+/*==================================================
+    NOMBRE DE LA MOTO
+==================================================*/
+
+.info-foto h3 {
+
+    font-size: 23px;
+
+    margin: 0 0 5px;
+
+}
+
+
+/*==================================================
+    DESCRIPCIÓN
+==================================================*/
+
+.info-foto p {
+
+    font-size: 15px;
+
+    margin: 0;
+
+}
+
+
+/*==================================================
+    EFECTO DE BORDE
+==================================================*/
+
+.foto-galeria::before {
+
+    content: "";
+
+    position: absolute;
+
+    z-index: 2;
+
+    inset: 0;
+
+    border: 2px solid transparent;
+
+    border-radius: 20px;
+
+    transition: 0.5s;
+
+    pointer-events: none;
+}
+
+
+.foto-galeria:hover::before {
+
+    border-color: #c77dff;
+
+    box-shadow:
+        inset 0 0 20px rgba(199,125,255,0.6);
+
+}
+
+
+/*==================================================
+    FRASE FINAL
+==================================================*/
+
+.frase-galeria {
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5a189a,
+            #24002f
+        );
+
+    color: white;
+}
+
+
+/*==================================================
+    ICONO DE MOTO
+==================================================*/
+
+.moto-icono {
+
+    font-size: 60px;
+
+    animation:
+        moverMoto 2s infinite alternate;
+}
+
+
+/*==================================================
+    ANIMACIÓN DE LA MOTO
+==================================================*/
+
+@keyframes moverMoto {
+
+    from {
+        transform: translateX(-20px);
+    }
+
+    to {
+        transform: translateX(20px);
+    }
+
+}
+
+
+/*==================================================
+    TÍTULO FINAL
+==================================================*/
+
+.frase-galeria h2 {
+
+    font-size: 32px;
+
+    margin: 15px 0;
+
+}
+
+
+/*==================================================
+    TEXTO FINAL
+==================================================*/
+
+.frase-galeria p {
+
+    font-size: 18px;
+
+}
+
+
+/*==================================================
+    TABLET
+==================================================*/
+
+@media (max-width: 1000px) {
+
+    .contenedor-galeria {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+/*==================================================
+    CELULAR
+==================================================*/
+
+@media (max-width: 600px) {
+
+    .seccion-galeria {
+
+        padding: 40px 20px 60px;
+
+    }
+
+    .contenedor-galeria {
+
+        grid-template-columns: 1fr;
+
+        grid-auto-rows: 250px;
+
+    }
+
+    .foto-galeria.grande {
+
+        grid-column: span 1;
+
+        grid-row: span 1;
+
+    }
+
+    .titulo-galeria h2 {
+
+        font-size: 35px;
+
+    }
+
+}
+/*==================================================
+    DISEÑO PARA TABLET
+==================================================*/
+
+/* Cuando la pantalla es menor de 900px,
+   mostramos 2 motos por fila */
+@media (max-width: 900px) {
+
+    .contenedor-motos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/*==================================================
+    DISEÑO PARA CELULAR
+==================================================*/
+
+/* Cuando la pantalla es menor de 600px,
+   mostramos una moto por fila */
+@media (max-width: 600px) {
+
+    .contenedor-motos {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion-motos {
+        padding: 30px 20px;
+    }
+
+    .titulo-motos h2 {
+        font-size: 32px;
+    }

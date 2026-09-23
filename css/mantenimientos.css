@@ -1,0 +1,647 @@
+/*==================================================
+    PRESENTACIÓN DE MANTENIMIENTO
+==================================================*/
+
+/* Esta sección crea la portada de mantenimiento */
+.inicio-mantenimiento {
+
+    /* Permite colocar elementos dentro de la sección */
+    position: relative;
+
+    /* Altura de la sección */
+    min-height: 500px;
+
+    /* Centra el contenido verticalmente */
+    display: flex;
+
+    align-items: center;
+
+    /* Centra el contenido horizontalmente */
+    justify-content: center;
+
+    /* Espacio interno */
+    padding: 60px 20px;
+
+    /* Fondo con degradado */
+    background: linear-gradient(
+        135deg,
+        #18001f,
+        #3b0764,
+        #7b2cbf
+    );
+
+    /* Oculta los elementos que salgan */
+    overflow: hidden;
+
+    /* Color del texto */
+    color: white;
+
+    /* Centra el texto */
+    text-align: center;
+}
+
+
+/*==================================================
+    CÍRCULO DECORATIVO
+==================================================*/
+
+/* Crea una figura circular detrás del texto */
+.circulo-mantenimiento {
+
+    /* Posición absoluta */
+    position: absolute;
+
+    /* Tamaño */
+    width: 350px;
+    height: 350px;
+
+    /* Forma circular */
+    border-radius: 50%;
+
+    /* Borde luminoso */
+    border: 3px solid rgba(255,255,255,0.2);
+
+    /* Posición */
+    right: 8%;
+    top: 50px;
+
+    /* Animación */
+    animation: girarCirculo 10s linear infinite;
+}
+
+
+/*==================================================
+    ANIMACIÓN DEL CÍRCULO
+==================================================*/
+
+/* Hace girar el círculo */
+@keyframes girarCirculo {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/*==================================================
+    TEXTO DE PRESENTACIÓN
+==================================================*/
+
+.texto-mantenimiento {
+
+    /* Coloca el texto por encima del círculo */
+    position: relative;
+
+    /* Mantiene el texto visible */
+    z-index: 2;
+
+    /* Ancho máximo */
+    max-width: 800px;
+
+}
+
+
+/*==================================================
+    ETIQUETA
+==================================================*/
+
+.etiqueta-mantenimiento {
+
+    /* Permite aplicar espacio */
+    display: inline-block;
+
+    /* Espacio interno */
+    padding: 8px 18px;
+
+    /* Bordes redondeados */
+    border-radius: 30px;
+
+    /* Fondo transparente */
+    background-color: rgba(255,255,255,0.15);
+
+    /* Borde */
+    border: 1px solid rgba(255,255,255,0.4);
+
+    /* Animación */
+    animation: aparecer 1s ease;
+}
+
+
+/*==================================================
+    TÍTULO PRINCIPAL
+==================================================*/
+
+.texto-mantenimiento h2 {
+
+    /* Tamaño del título */
+    font-size: 55px;
+
+    /* Espacio */
+    margin: 20px 0;
+
+    /* Sombra del texto */
+    text-shadow: 0 0 20px rgba(255,255,255,0.4);
+
+    /* Animación */
+    animation: aparecer 1.5s ease;
+}
+
+
+/*==================================================
+    TEXTO
+==================================================*/
+
+.texto-mantenimiento p {
+
+    /* Tamaño */
+    font-size: 21px;
+
+    /* Altura de línea */
+    line-height: 1.6;
+
+    /* Animación */
+    animation: aparecer 2s ease;
+}
+
+
+/*==================================================
+    ANIMACIÓN DE APARICIÓN
+==================================================*/
+
+@keyframes aparecer {
+
+    from {
+
+        /* Comienza transparente */
+        opacity: 0;
+
+        /* Comienza un poco abajo */
+        transform: translateY(25px);
+    }
+
+    to {
+
+        /* Termina visible */
+        opacity: 1;
+
+        /* Regresa a su posición */
+        transform: translateY(0);
+    }
+
+}
+
+
+/*==================================================
+    BOTÓN
+==================================================*/
+
+.boton-mantenimiento {
+
+    /* Permite modificar el botón */
+    display: inline-block;
+
+    /* Espacio interno */
+    padding: 14px 28px;
+
+    /* Espacio superior */
+    margin-top: 25px;
+
+    /* Color */
+    background-color: white;
+
+    /* Color del texto */
+    color: #5a189a;
+
+    /* Quita el subrayado */
+    text-decoration: none;
+
+    /* Bordes redondeados */
+    border-radius: 30px;
+
+    /* Texto grueso */
+    font-weight: bold;
+
+    /* Animación */
+    transition: 0.3s;
+}
+
+
+/* Efecto del botón */
+.boton-mantenimiento:hover {
+
+    /* Aumenta ligeramente */
+    transform: scale(1.1);
+
+    /* Cambia el color */
+    background-color: #e0aaff;
+
+    /* Sombra */
+    box-shadow: 0 0 25px rgba(255,255,255,0.7);
+}
+
+
+/*==================================================
+    SECCIÓN DE SERVICIOS
+==================================================*/
+
+.seccion-mantenimiento {
+
+    /* Fondo */
+    background-color: #18001f;
+
+    /* Espacio */
+    padding: 70px 40px;
+}
+
+
+/*==================================================
+    TÍTULO DE SERVICIOS
+==================================================*/
+
+.titulo-mantenimiento {
+
+    /* Centra el texto */
+    text-align: center;
+
+    /* Color */
+    color: white;
+
+    /* Espacio inferior */
+    margin-bottom: 45px;
+}
+
+
+.titulo-mantenimiento h2 {
+
+    /* Tamaño */
+    font-size: 40px;
+
+    /* Espacio */
+    margin-bottom: 12px;
+}
+
+
+.titulo-mantenimiento p {
+
+    /* Tamaño */
+    font-size: 18px;
+}
+
+
+/*==================================================
+    CONTENEDOR DE TARJETAS
+==================================================*/
+
+.contenedor-mantenimiento {
+
+    /* Ancho máximo */
+    max-width: 1200px;
+
+    /* Centra las tarjetas */
+    margin: auto;
+
+    /* Activa Grid */
+    display: grid;
+
+    /* Cuatro tarjetas por fila */
+    grid-template-columns: repeat(4, 1fr);
+
+    /* Espacio */
+    gap: 30px;
+}
+
+
+/*==================================================
+    TARJETA
+==================================================*/
+
+.tarjeta-mantenimiento {
+
+    /* Fondo */
+    background: linear-gradient(
+        145deg,
+        #ffffff,
+        #f3e8ff
+    );
+
+    /* Centra el contenido */
+    text-align: center;
+
+    /* Espacio interno */
+    padding: 30px 20px;
+
+    /* Bordes */
+    border-radius: 20px;
+
+    /* Sombra */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+
+    /* Animación */
+    transition: 0.4s;
+
+    /* Posición */
+    position: relative;
+
+    /* Oculta elementos que salgan */
+    overflow: hidden;
+}
+
+
+/*==================================================
+    LÍNEA DECORATIVA
+==================================================*/
+
+/* Crea una línea en la parte superior */
+.tarjeta-mantenimiento::before {
+
+    /* Contenido vacío */
+    content: "";
+
+    /* Posición */
+    position: absolute;
+
+    /* Parte superior */
+    top: 0;
+    left: 0;
+
+    /* Ancho */
+    width: 100%;
+
+    /* Altura */
+    height: 5px;
+
+    /* Degradado */
+    background: linear-gradient(
+        90deg,
+        #7b2cbf,
+        #c77dff
+    );
+}
+
+
+/*==================================================
+    EFECTO DE LA TARJETA
+==================================================*/
+
+/* Se activa cuando pasamos el mouse */
+.tarjeta-mantenimiento:hover {
+
+    /* La tarjeta sube */
+    transform: translateY(-12px) scale(1.03);
+
+    /* Sombra más grande */
+    box-shadow: 0 20px 40px rgba(123,44,191,0.5);
+}
+
+
+/*==================================================
+    ICONOS
+==================================================*/
+
+.icono-mantenimiento {
+
+    /* Tamaño del icono */
+    font-size: 50px;
+
+    /* Espacio */
+    margin-bottom: 15px;
+
+    /* Animación */
+    transition: 0.4s;
+}
+
+
+/* El icono aumenta al pasar el mouse */
+.tarjeta-mantenimiento:hover .icono-mantenimiento {
+
+    /* Aumenta el tamaño */
+    transform: scale(1.25) rotate(8deg);
+}
+
+
+/*==================================================
+    NOMBRE DEL SERVICIO
+==================================================*/
+
+.tarjeta-mantenimiento h3 {
+
+    /* Tamaño */
+    font-size: 22px;
+
+    /* Color */
+    color: #4c1d95;
+
+    /* Espacio */
+    margin-bottom: 12px;
+}
+
+
+/*==================================================
+    DESCRIPCIÓN
+==================================================*/
+
+.tarjeta-mantenimiento p {
+
+    /* Tamaño */
+    font-size: 16px;
+
+    /* Altura */
+    line-height: 1.5;
+
+    /* Color */
+    color: #444;
+}
+
+
+/*==================================================
+    PRECIO
+==================================================*/
+
+.precio-mantenimiento {
+
+    /* Hace que ocupe su propia línea */
+    display: block;
+
+    /* Espacio superior */
+    margin-top: 18px;
+
+    /* Color */
+    color: #7b2cbf;
+
+    /* Texto grueso */
+    font-weight: bold;
+
+    /* Tamaño */
+    font-size: 18px;
+}
+
+
+/*==================================================
+    SECCIÓN CONSEJO
+==================================================*/
+
+.consejo-mantenimiento {
+
+    /* Fondo */
+    background: linear-gradient(
+        135deg,
+        #24002f,
+        #5a189a
+    );
+
+    /* Centra el contenido */
+    text-align: center;
+
+    /* Color */
+    color: white;
+
+    /* Espacio */
+    padding: 60px 20px;
+}
+
+
+/*==================================================
+    ICONO DEL CONSEJO
+==================================================*/
+
+.contenido-consejo span {
+
+    /* Tamaño */
+    font-size: 60px;
+
+    /* Animación */
+    animation: moverMoto 2s infinite alternate;
+}
+
+
+/*==================================================
+    ANIMACIÓN DEL ICONO
+==================================================*/
+
+@keyframes moverMoto {
+
+    from {
+        transform: translateX(-15px);
+    }
+
+    to {
+        transform: translateX(15px);
+    }
+
+}
+
+
+/*==================================================
+    TÍTULO DEL CONSEJO
+==================================================*/
+
+.contenido-consejo h2 {
+
+    /* Tamaño */
+    font-size: 35px;
+
+    /* Espacio */
+    margin: 15px 0;
+}
+
+
+/*==================================================
+    TEXTO DEL CONSEJO
+==================================================*/
+
+.contenido-consejo p {
+
+    /* Tamaño */
+    font-size: 18px;
+}
+
+
+/*==================================================
+    TABLET
+==================================================*/
+
+@media (max-width: 1000px) {
+
+    .contenedor-mantenimiento {
+
+        /* Dos tarjetas por fila */
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/*==================================================
+    CELULAR
+==================================================*/
+
+@media (max-width: 600px) {
+
+    .contenedor-mantenimiento {
+
+        /* Una tarjeta por fila */
+        grid-template-columns: 1fr;
+    }
+
+    .seccion-mantenimiento {
+
+        /* Reduce el espacio */
+        padding: 50px 20px;
+    }
+
+    .texto-mantenimiento h2 {
+
+        /* Reduce el tamaño del título */
+        font-size: 38px;
+    }
+
+    .circulo-mantenimiento {
+
+        /* Reduce el círculo en celular */
+        width: 250px;
+        height: 250px;
+    }
+
+}
+
+/*==================================================
+    DISEÑO PARA TABLET
+==================================================*/
+
+/* Cuando la pantalla es menor de 900px,
+   mostramos 2 motos por fila */
+@media (max-width: 900px) {
+
+    .contenedor-motos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/*==================================================
+    DISEÑO PARA CELULAR
+==================================================*/
+
+/* Cuando la pantalla es menor de 600px,
+   mostramos una moto por fila */
+@media (max-width: 600px) {
+    
+}
+
+    .contenedor-motos {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion-motos {
+        padding: 30px 20px;
+    }
+
+    .titulo-motos h2 {
+        font-size: 32px;
+    }

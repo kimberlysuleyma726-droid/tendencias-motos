@@ -1,0 +1,175 @@
+/*==========================
+    ESTILOS GENERALES
+=======================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1e0227;
+    color: #f0f4f4;
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0B2545;
+    font-size: 35;
+}
+
+section{
+    padding: 60px 0;
+}
+
+/*======================
+    TARJETAS
+==================*/
+
+.tarjetas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card{
+    width: 200px;
+    background: #0ae00a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width: 60%;
+    height: 80px;
+    object-fit: cover;/* ajusta la imagen*/
+    display: block;
+}
+
+.card h3{
+    text-align: center;
+    margin: 5px 0;
+    color: #0B2545;
+}
+
+.card p{
+    padding: 0 10px 10px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.quienes-somos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.quienes-somos .texto{
+    flex: 1;
+}
+.quienes-somos .imagen{
+    flex: 1;
+    text-align: center;
+}
+.quienes-somos .imagen img{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/*==================================================
+    ADAPTACIÓN GENERAL PARA CELULAR
+==================================================*/
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .contenedor {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    header .logo h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    header .logo p {
+        font-size: 14px;
+    }
+
+    /* MENÚ */
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3px;
+        padding: 8px 5px;
+    }
+
+    nav ul li a {
+        font-size: 11px;
+        padding: 7px 6px;
+    }
+
+}
+/*==================================================
+    DISEÑO PARA TABLET
+==================================================*/
+
+/* Cuando la pantalla es menor de 900px,
+   mostramos 2 motos por fila */
+@media (max-width: 900px) {
+
+    .contenedor-motos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/*==================================================
+    DISEÑO PARA CELULAR
+==================================================*/
+
+/* Cuando la pantalla es menor de 600px,
+   mostramos una moto por fila */
+@media (max-width: 600px) {
+
+    .contenedor-motos {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion-motos {
+        padding: 30px 20px;
+    }
+
+    .titulo-motos h2 {
+        font-size: 32px;
+    }
